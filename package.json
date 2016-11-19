@@ -1,0 +1,27 @@
+{
+  "name": "ficial",
+  "version": "0.0.1",
+  "description": "Simple Web Service for generating mock(fake, artificial) data ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taronpa/ficial.git"
+  },
+  "keywords": [
+    "artificial",
+    "ficial",
+    "faker",
+    "fake",
+    "mock",
+    "data"
+  ],
+  "author": "Taron Petrosyan <tgtaron@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taronpa/ficial/issues"
+  },
+  "homepage": "https://github.com/taronpa/ficial#readme"
+}
