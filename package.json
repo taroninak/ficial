@@ -1,9 +1,10 @@
 {
   "name": "ficial",
   "version": "0.0.1",
-  "description": "Simple Web Service for generating mock(fake, artificial) data ",
-  "main": "index.js",
+  "description": "Simple Web Service for generating mock(fake, artificial) data",
+  "main": "app.js",
   "scripts": {
+    "start": "node app",
     "test": "mocha --harmony"
   },
   "repository": {
@@ -23,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/taronpa/ficial/issues"
   },
-  "homepage": "https://github.com/taronpa/ficial#readme"
+  "homepage": "https://github.com/taronpa/ficial#readme",
+  "dependencies": {
+    "coroutinify": "0.0.2",
+    "express": "^4.14.0",
+    "faker": "^3.1.0"
+  }
 }
