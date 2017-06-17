@@ -46,6 +46,7 @@ class ApiController {
         try {
             res.json(JSON.parse(json));
         } catch (ex) {
+            res.header("Content-Type",'text/plain');
             return res.send(json);
         }
     }
