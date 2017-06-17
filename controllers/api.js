@@ -43,7 +43,11 @@ class ApiController {
 
     generateTemplate(req, res, next) {
         let json = dummy.parse(req.query.q);
-        return res.json(JSON.parse(json));
+        try {
+            res.json(JSON.parse(json));
+        } catch (ex) {
+            return res.send(json);
+        }
     }
 
     generateItem(req, res, next) {
