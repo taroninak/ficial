@@ -26,7 +26,9 @@
   },
   "homepage": "https://github.com/taronpa/ficial#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "coroutinify": "0.0.2",
+    "dummy-json": "^2.0.0",
     "express": "^4.14.0",
     "faker": "^3.1.0"
   },

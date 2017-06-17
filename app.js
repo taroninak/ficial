@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 
 const config = require('./config');
 const controllers = require('./controllers');
@@ -8,6 +9,9 @@ const app = express();
 
 //Add serving static files from .public folder
 app.use(express.static('./public'));
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 //Configure all controllers
 controllers(app);
