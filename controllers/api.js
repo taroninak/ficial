@@ -42,6 +42,15 @@ class ApiController {
     }
 
     generateTemplate(req, res, next) {
+        if (req.query.count) {
+            let array = [];
+            for (let i = 0; i < parseInt(req.query.count); i++) {
+                array.push(JSON.parse(dummy.parse(req.query.q)));
+            }
+
+            return res.json(array);
+        }
+
         let json = dummy.parse(req.query.q);
         try {
             res.json(JSON.parse(json));
